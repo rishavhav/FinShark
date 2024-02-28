@@ -7,6 +7,7 @@ import SignUpPage from "./SignUpPage"
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <ProductList />
     </div>
   )
