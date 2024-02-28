@@ -1,16 +1,17 @@
 import Navbar from "../features/navbar/Navbar"
-import ProductList from "../features/product-list/ProductList"
+import ProductList from "../features/product-list/components/ProductList"
 import Login from "../features/auth/components/Login"
 import LoginPage from "./LoginPage"
 import SignUpPage from "./SignUpPage"
 
-const Home = () => {
+function Home() {
   return (
     <div>
-      <Navbar />
-      <ProductList />
+      <Navbar>
+        <ProductList></ProductList>
+      </Navbar>
     </div>
-  )
+  );
 }
 
 export default Home
