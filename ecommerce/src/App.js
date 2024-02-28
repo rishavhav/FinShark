@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./index.css"
 import SignUpPage from "./pages/SignUpPage"
 import LoginPage from "./pages/LoginPage"
+import Cart from "./features/cart/Cart"
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "signup/",
     element: <SignUpPage />,
+  },
+  {
+    path: "cart/",
+    element: <Cart />,
   },
 ])
 
